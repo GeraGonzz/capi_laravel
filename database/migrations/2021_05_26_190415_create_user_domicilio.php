@@ -13,7 +13,7 @@ class CreateUserDomicilio extends Migration
      */
     public function up()
     {
-        Schema::create('user_domicilio', function (Blueprint $table) {
+        Schema::create('domicilios', function (Blueprint $table) {
             $table->id('user_id');
             $table->string('domicilio');
             $table->string('numero_exterior');
@@ -30,6 +30,6 @@ class CreateUserDomicilio extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_domicilio');
+        Schema::dropIfExists('domicilios');
     }
 }

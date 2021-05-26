@@ -13,7 +13,7 @@ class AddFechaNacimientoToUserDomicilioTable extends Migration
      */
     public function up()
     {
-        Schema::table('user_domicilio', function (Blueprint $table) {
+        Schema::table('domicilios', function (Blueprint $table) {
             $table->date('fecha_nacimiento');
         });
     }
@@ -25,7 +25,7 @@ class AddFechaNacimientoToUserDomicilioTable extends Migration
      */
     public function down()
     {
-        Schema::table('user_domicilio', function (Blueprint $table) {
+        Schema::table('domicilios', function (Blueprint $table) {
             //
         });
     }
