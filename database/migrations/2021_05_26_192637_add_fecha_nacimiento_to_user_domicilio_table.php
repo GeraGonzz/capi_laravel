@@ -14,7 +14,7 @@ class AddFechaNacimientoToUserDomicilioTable extends Migration
     public function up()
     {
         Schema::table('user_domicilio', function (Blueprint $table) {
-            //
+            $table->date('fecha_nacimiento');
         });
     }
 
